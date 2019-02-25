@@ -4,22 +4,24 @@
 ## Instructions
 
 Clone this repository wherever you want.
+
 Place yourself at the root and type :
 
 ```bash
-chmod 755 playlist_creator.lua
-./playlist_creator.lua <file_name>
+chmod 755 make_playlist.lua
+./make_playlist.lua <path_to_file>
 ```
 
 *or*
 
 ```bash
-lua playlist_creator.lua <file_name>
+make_playlist.lua <path_to_file>
 ```
 
 __then__
 
 Copy paste the **_URL_** from your terminal in your favourite browser
+
 Enjoy its content :tada:.
 
 *N.B. : if you don't pass any argument or you pass an unexisting file, the returned playlist will be empty.*
