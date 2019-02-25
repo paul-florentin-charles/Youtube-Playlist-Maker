@@ -60,21 +60,22 @@ end
 --- Creates a YouTube link redirecting to a playlist
 -- Uses built-in <arg> table to get passed arguments
 -- If none is passed or unknown file, returns an empty playlist
+-- If second argument is set to "true", playlist is shuffled
 -- @return Playlist URL as a string
--- @param shuffle_ids Boolean that entails id-shuffling if set to true
-function make_playlist(shuffle_ids)   
-   ids = {}
+function make_playlist()   
+   local ids = {}
+
    if #arg > 0
    then
       ids = parse_ids(arg[1])
    end
 
-   if shuffle_ids
+   if #arg > 1 and arg[2] == tostring(true) 
    then
       ids = shuffle(ids)
    end
-   
+
    return form_url(ids)
 end
 
-print(make_playlist(true))
+print(make_playlist())
