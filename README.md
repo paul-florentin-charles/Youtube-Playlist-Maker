@@ -7,7 +7,7 @@ Clone this repository wherever you want.
 Place yourself at the root and type :
 
 ```bash
-chmod 744 playlist_creator.lua
+chmod 755 playlist_creator.lua
 ./playlist_creator.lua <file_name>
 ```
 
@@ -28,9 +28,9 @@ Enjoy its content :tada:.
 ## File syntax
 
 ```
-Id, Title, Artist
-id1, title1, artist1
-id2, title2, artist2
+Id,Title,Artist
+id1,title1,artist1
+id2,title2,artist2
 ...
 ```
 
