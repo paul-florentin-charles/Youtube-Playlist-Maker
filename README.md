@@ -44,4 +44,5 @@ id2,title2,artist2
 * At the root there is a directory *playlists* that contains samples of playlists
 * Check these files to make sure you got the syntax and test the program with them
 * Video ids are 11 character-lengthed strings, they are written in youtube urls after *watch?v=*
-* In my case I need to load the link twice in order to get the playlist right
+* In my case I sometimes need to load the link twice in order to get the playlist right
+* Unfortunately, playlists whose length is above 50 will be truncated, if you have an idea on how to solve it, please add an issue
